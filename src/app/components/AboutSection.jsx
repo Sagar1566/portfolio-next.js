@@ -15,10 +15,6 @@ const TAB_DATA = [
         <li>Sequelize</li>
         <li>JavaScript</li>
         <li>React</li>
-        <li>MongoDB</li>
-        <li>Next.js</li>
-        <li>Tailwind CSS</li>
-        <li>Japanese (N5 Level)</li>
       </ul>
     ),
   },
@@ -27,7 +23,8 @@ const TAB_DATA = [
     id: "education",
     content: (
       <ul className="list-disc pl-2">
-        <li>JDCOE, Nagpur (1st Year, transitioning to 2nd Year in April)</li>
+        <li>Fullstack Academy of Code</li>
+        <li>University of California, Santa Cruz</li>
       </ul>
     ),
   },
@@ -38,7 +35,6 @@ const TAB_DATA = [
       <ul className="list-disc pl-2">
         <li>AWS Cloud Practitioner</li>
         <li>Google Professional Cloud Developer</li>
-        <li>Completed 24-hour Next.js Workshop</li>
       </ul>
     ),
   },
@@ -61,32 +57,34 @@ const AboutSection = () => {
         <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
           <h2 className="text-4xl font-bold text-white mb-4">About Me</h2>
           <p className="text-base lg:text-lg">
-            I am Sagar Navnath Gajbhar, a full stack web developer passionate about
-            building interactive and responsive web applications. I specialize in
-            JavaScript, React, Node.js, Express, MongoDB, and PostgreSQL, with
-            experience in Next.js and Tailwind CSS. Currently, I am a 1st-year
-            student at JDCOE, Nagpur, moving into my 2nd year in April. Apart from
-            coding, I am also learning Japanese (N5 Level) and actively
-            participating in hackathons and tech events.
+            I am a full stack web developer with a passion for creating
+            interactive and responsive web applications. I have experience
+            working with JavaScript, React, Redux, Node.js, Express, PostgreSQL,
+            Sequelize, HTML, CSS, and Git. I am a quick learner and I am always
+            looking to expand my knowledge and skill set. I am a team player and
+            I am excited to work with others to create amazing applications.
           </p>
           <div className="flex flex-row justify-start mt-8">
             <TabButton
               selectTab={() => handleTabChange("skills")}
               active={tab === "skills"}
             >
-              {" "} Skills {" "}
+              {" "}
+              Skills{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("education")}
               active={tab === "education"}
             >
-              {" "} Education {" "}
+              {" "}
+              Education{" "}
             </TabButton>
             <TabButton
               selectTab={() => handleTabChange("certifications")}
               active={tab === "certifications"}
             >
-              {" "} Certifications {" "}
+              {" "}
+              Certifications{" "}
             </TabButton>
           </div>
           <div className="mt-8">
